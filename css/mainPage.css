@@ -1,0 +1,102 @@
+@media(min-width:900px) {
+  .page-main {
+    display:grid;
+    grid-template-columns: repeat(1fr,3);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    padding: 20px;
+    grid-template-areas:
+      "cd cd cd";
+  }
+
+  .card {
+    width: 22vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+@media(max-width:899px) {
+
+  .page-main {
+    display:grid;
+    grid-template-columns: repeat(1fr,2);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    padding: 20px;
+    grid-template-areas:
+      "cd cd";
+  }
+
+  .card {
+    width: 40vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+@media(max-width:480px) {
+
+  .page-main {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    padding: 20px;
+    grid-template-areas:
+      "cd";
+  }
+
+  .card {
+    width: 80vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.card-image {
+  margin-top: 16px;
+  width: 50%;
+}
+
+.card-info {
+  padding: 16px;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;
+  margin-bottom: 10px;
+}
+
+.button:hover{
+  background-color: white;
+  color: #4CAF50;
+  border: 1px solid #4CAF50;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;
+}
+
+.round-button {
+  border-radius: 8px;
+}
